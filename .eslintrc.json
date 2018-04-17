@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+        "flowtype"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/default-props-match-prop-types": "off"
+    }
+}
