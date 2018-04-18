@@ -5,6 +5,10 @@ export default [
     component: Table,
     name: '3-players',
     props: {
+      community: {
+        board: ['As', '2s', 'Kh'],
+        pot: 1.5,
+      },
       players: [
         {
           active: true,

@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 
 import styles from '../styles/Community.module.css';
 
-type Props = {
+export type CmProps = {
   board?: string[],
   pot?: number,
 };
@@ -15,7 +15,7 @@ Community.defaultProps = {
   pot: 0,
 };
 
-function Community(props: Props) {
+function Community(props: CmProps) {
   function boardString() {
     const b = ((props.board) ? props.board.slice() : []);
     let str = '';

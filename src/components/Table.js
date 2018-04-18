@@ -7,9 +7,11 @@ import Player from './Player';
 import Community from './Community';
 
 import type PlProps from './Player';
+import type CmProps from './Community';
 
 type Props = {
-  players: PlProps[]
+  players: PlProps[],
+  community: CmProps,
 };
 
 // eslint-disable-next-line no-use-before-define
@@ -24,7 +26,7 @@ function Table(props: Props) {
 
   return (
     <div styleName="wrapper">
-      {wrap(Community, 'community')}
+      {wrap(Community, 'community', props.community)}
       {wrap(Player, 'pl0', props.players[0])}
       {wrap(Player, 'pl1', props.players[1])}
       {wrap(Player, 'pl2', props.players[2])}
