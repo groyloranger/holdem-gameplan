@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 
 import styles from '../styles/Player.module.css';
 
-type Props = {
+export type PlProps = {
   active?: boolean,
   bet?: number,
   folded?: boolean,
@@ -21,7 +21,7 @@ Player.defaultProps = {
   stack: 100,
 };
 
-function Player(props: Props) {
+function Player(props: PlProps) {
   const state = () => {
     let s = 'inactive';
     if (props.active) { s = 'active'; }

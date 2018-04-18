@@ -202,3 +202,103 @@ exports[`Cosmos fixtures: Player:inactive 1`] = `
   </ul>
 </div>
 `;
+
+exports[`Cosmos fixtures: Table:3-players 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="community"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="round"
+      >
+        Flop
+      </div>
+      <div
+        className="board"
+      >
+        As 2s Kh __ __
+      </div>
+      <div
+        className="pot"
+      >
+        Pot: 
+        1.5
+      </div>
+    </div>
+  </div>
+  <div
+    className="pl0"
+  >
+    <div
+      className="active"
+    >
+      <center
+        className="name"
+      >
+        Button
+      </center>
+      <ul>
+        <li>
+          Stk: 
+          100
+        </li>
+        <li>
+          Bet: 
+          0
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="pl1"
+  >
+    <div
+      className="inactive"
+    >
+      <center
+        className="name"
+      >
+        Small
+      </center>
+      <ul>
+        <li>
+          Stk: 
+          99.5
+        </li>
+        <li>
+          Bet: 
+          0.5
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="pl2"
+  >
+    <div
+      className="inactive"
+    >
+      <center
+        className="name"
+      >
+        Big
+      </center>
+      <ul>
+        <li>
+          Stk: 
+          99
+        </li>
+        <li>
+          Bet: 
+          1
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
