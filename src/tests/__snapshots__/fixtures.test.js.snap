@@ -4,21 +4,22 @@ exports[`Cosmos fixtures: Community:default 1`] = `
 <div
   className="wrapper"
 >
-  <center
+  <div
     className="round"
   >
     Preflop
-  </center>
-  <center
+  </div>
+  <div
     className="board"
   >
     __ __ __ __ __
-  </center>
-  <center
+  </div>
+  <div
     className="pot"
   >
+    Pot: 
     0
-  </center>
+  </div>
 </div>
 `;
 
@@ -26,21 +27,22 @@ exports[`Cosmos fixtures: Community:flop 1`] = `
 <div
   className="wrapper"
 >
-  <center
+  <div
     className="round"
   >
     Flop
-  </center>
-  <center
+  </div>
+  <div
     className="board"
   >
     As 5h 8d __ __
-  </center>
-  <center
+  </div>
+  <div
     className="pot"
   >
+    Pot: 
     2
-  </center>
+  </div>
 </div>
 `;
 
@@ -48,21 +50,22 @@ exports[`Cosmos fixtures: Community:preflop 1`] = `
 <div
   className="wrapper"
 >
-  <center
+  <div
     className="round"
   >
     Preflop
-  </center>
-  <center
+  </div>
+  <div
     className="board"
   >
     __ __ __ __ __
-  </center>
-  <center
+  </div>
+  <div
     className="pot"
   >
+    Pot: 
     2
-  </center>
+  </div>
 </div>
 `;
 
@@ -70,21 +73,22 @@ exports[`Cosmos fixtures: Community:river 1`] = `
 <div
   className="wrapper"
 >
-  <center
+  <div
     className="round"
   >
     River
-  </center>
-  <center
+  </div>
+  <div
     className="board"
   >
     As 5h 8d Jc 4s
-  </center>
-  <center
+  </div>
+  <div
     className="pot"
   >
+    Pot: 
     2
-  </center>
+  </div>
 </div>
 `;
 
@@ -92,21 +96,22 @@ exports[`Cosmos fixtures: Community:turn 1`] = `
 <div
   className="wrapper"
 >
-  <center
+  <div
     className="round"
   >
     Turn
-  </center>
-  <center
+  </div>
+  <div
     className="board"
   >
     As 5h 8d Jc __
-  </center>
-  <center
+  </div>
+  <div
     className="pot"
   >
+    Pot: 
     2
-  </center>
+  </div>
 </div>
 `;
 

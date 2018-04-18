@@ -52,9 +52,9 @@ function Community(props: Props) {
 
   return (
     <div styleName="wrapper">
-      <center styleName="round">{round()}</center>
-      <center styleName="board">{boardString()}</center>
-      <center styleName="pot">{props.pot}</center>
+      <div styleName="round">{round()}</div>
+      <div styleName="board">{boardString()}</div>
+      <div styleName="pot">Pot: {props.pot}</div>
     </div>
   );
 }
