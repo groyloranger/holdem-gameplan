@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Cosmos fixtures: Action:default 1`] = `
+<div
+  className="wrapper"
+>
+  Action
+</div>
+`;
+
 exports[`Cosmos fixtures: Community:default 1`] = `
 <div
   className="wrapper"
