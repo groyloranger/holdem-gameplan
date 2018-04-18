@@ -6,12 +6,16 @@ import styles from '../styles/Table.module.css';
 import Player from './Player';
 import Community from './Community';
 
-// type Props = {};
+import type PlProps from './Player';
+
+type Props = {
+  players: PlProps[]
+};
 
 // eslint-disable-next-line no-use-before-define
 Table.defaultProps = {};
 
-function Table(/* props: Props */) {
+function Table(props: Props) {
   const wrap = (Component, style, prps) => (
     <div styleName={style}>
       <Component {...prps} />
@@ -21,9 +25,9 @@ function Table(/* props: Props */) {
   return (
     <div styleName="wrapper">
       {wrap(Community, 'community')}
-      {wrap(Player, 'sb', { name: 'Small' })}
-      {wrap(Player, 'bb', { name: 'Big' })}
-      {wrap(Player, 'bu', { name: 'Button' })}
+      {wrap(Player, 'pl0', props.players[0])}
+      {wrap(Player, 'pl1', props.players[1])}
+      {wrap(Player, 'pl2', props.players[2])}
     </div>
   );
 }

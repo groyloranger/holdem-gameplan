@@ -203,7 +203,7 @@ exports[`Cosmos fixtures: Player:inactive 1`] = `
 </div>
 `;
 
-exports[`Cosmos fixtures: Table:default 1`] = `
+exports[`Cosmos fixtures: Table:3-players 1`] = `
 <div
   className="wrapper"
 >
@@ -232,56 +232,10 @@ exports[`Cosmos fixtures: Table:default 1`] = `
     </div>
   </div>
   <div
-    className="sb"
+    className="pl0"
   >
     <div
-      className="inactive"
-    >
-      <center
-        className="name"
-      >
-        Small
-      </center>
-      <ul>
-        <li>
-          Stk: 
-          100
-        </li>
-        <li>
-          Bet: 
-          0
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="bb"
-  >
-    <div
-      className="inactive"
-    >
-      <center
-        className="name"
-      >
-        Big
-      </center>
-      <ul>
-        <li>
-          Stk: 
-          100
-        </li>
-        <li>
-          Bet: 
-          0
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="bu"
-  >
-    <div
-      className="inactive"
+      className="active"
     >
       <center
         className="name"
@@ -296,6 +250,52 @@ exports[`Cosmos fixtures: Table:default 1`] = `
         <li>
           Bet: 
           0
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="pl1"
+  >
+    <div
+      className="inactive"
+    >
+      <center
+        className="name"
+      >
+        Small
+      </center>
+      <ul>
+        <li>
+          Stk: 
+          99.5
+        </li>
+        <li>
+          Bet: 
+          0.5
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="pl2"
+  >
+    <div
+      className="inactive"
+    >
+      <center
+        className="name"
+      >
+        Big
+      </center>
+      <ul>
+        <li>
+          Stk: 
+          99
+        </li>
+        <li>
+          Bet: 
+          1
         </li>
       </ul>
     </div>

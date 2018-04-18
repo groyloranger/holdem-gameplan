@@ -17,21 +17,21 @@
   transform: translate(-50%, -50%);
 }
 
-.sb{
+.pl0{
   position: absolute;
   left: 20%;
   top: 80%;
   transform: translate(-50%, -50%);
 }
 
-.bb{
+.pl1{
   position: absolute;
   left: 50%;
   top: 20%;
   transform: translate(-50%, -50%);
 }
 
-.bu{
+.pl2{
   position: absolute;
   left: 80%;
   top: 80%;
