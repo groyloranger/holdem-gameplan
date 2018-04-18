@@ -3,6 +3,8 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 
 import styles from '../styles/Table.module.css';
+import Player from './Player';
+import Community from './Community';
 
 // type Props = {};
 
@@ -10,9 +12,18 @@ import styles from '../styles/Table.module.css';
 Table.defaultProps = {};
 
 function Table(/* props: Props */) {
+  const wrap = (Component, style, prps) => (
+    <div styleName={style}>
+      <Component {...prps} />
+    </div>
+  );
+
   return (
     <div styleName="wrapper">
-      Table
+      {wrap(Community, 'community')}
+      {wrap(Player, 'sb', { name: 'Small' })}
+      {wrap(Player, 'bb', { name: 'Big' })}
+      {wrap(Player, 'bu', { name: 'Button' })}
     </div>
   );
 }
