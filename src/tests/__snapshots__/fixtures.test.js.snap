@@ -4,7 +4,21 @@ exports[`Cosmos fixtures: Action:default 1`] = `
 <div
   className="wrapper"
 >
-  Action
+  <button
+    className="fold"
+  >
+    Fold
+  </button>
+  <button
+    className="call"
+  >
+    Call
+  </button>
+  <button
+    className="raise"
+  >
+    Raise
+  </button>
 </div>
 `;
 

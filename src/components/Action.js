@@ -12,7 +12,9 @@ Action.defaultProps = {};
 function Action(/* props: AcProps */) {
   return (
     <div styleName="wrapper">
-      Action
+      <button styleName="fold">Fold</button>
+      <button styleName="call">Call</button>
+      <button styleName="raise">Raise</button>
     </div>
   );
 }
