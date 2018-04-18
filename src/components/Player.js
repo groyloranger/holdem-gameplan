@@ -1,17 +1,37 @@
 // @flow
 import React from 'react';
 
-// import '../styles/Player.css';
+// import styles from '../styles/Player.module.css';
 
-// type Props = {};
+type Props = {
+  active?: boolean,
+  bet?: number,
+  folded?: boolean,
+  name?: string,
+  stack?: number,
+};
 
 // eslint-disable-next-line no-use-before-define
-// Player.defaultProps = {};
+Player.defaultProps = {
+  active: false,
+  bet: 0,
+  folded: false,
+  name: 'Player',
+  stack: 100,
+};
 
-export default function Player(/* props: Props */) {
+export default function Player(props: Props) {
   return (
     <div>
-      Player
+      <p>{props.name}</p>
+      <p>Stack: {props.stack}</p>
+      <p>Bet: {props.bet}</p>
+      {props.active &&
+        <p>ACTIVE</p>
+      }
+      {props.folded &&
+        <p>FOLDED</p>
+      }
     </div>
   );
 }

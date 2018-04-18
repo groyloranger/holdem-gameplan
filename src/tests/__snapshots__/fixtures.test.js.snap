@@ -2,24 +2,70 @@
 
 exports[`Cosmos fixtures: Player:active 1`] = `
 <div>
-  Player
+  <p>
+    Hero
+  </p>
+  <p>
+    Stack: 
+    199
+  </p>
+  <p>
+    Bet: 
+    1
+  </p>
+  <p>
+    ACTIVE
+  </p>
 </div>
 `;
 
 exports[`Cosmos fixtures: Player:default 1`] = `
 <div>
-  Player
+  <p>
+    Player
+  </p>
+  <p>
+    Stack: 
+    100
+  </p>
+  <p>
+    Bet: 
+    0
+  </p>
 </div>
 `;
 
 exports[`Cosmos fixtures: Player:folded 1`] = `
 <div>
-  Player
+  <p>
+    Hero
+  </p>
+  <p>
+    Stack: 
+    199
+  </p>
+  <p>
+    Bet: 
+    1
+  </p>
+  <p>
+    FOLDED
+  </p>
 </div>
 `;
 
 exports[`Cosmos fixtures: Player:inactive 1`] = `
 <div>
-  Player
+  <p>
+    Hero
+  </p>
+  <p>
+    Stack: 
+    199
+  </p>
+  <p>
+    Bet: 
+    1
+  </p>
 </div>
 `;
