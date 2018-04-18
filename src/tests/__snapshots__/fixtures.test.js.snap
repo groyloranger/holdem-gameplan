@@ -1,5 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Cosmos fixtures: Community:default 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="round"
+  >
+    Preflop
+  </div>
+  <div
+    className="board"
+  >
+    __ __ __ __ __
+  </div>
+  <div
+    className="pot"
+  >
+    Pot: 
+    0
+  </div>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:flop 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="round"
+  >
+    Flop
+  </div>
+  <div
+    className="board"
+  >
+    As 5h 8d __ __
+  </div>
+  <div
+    className="pot"
+  >
+    Pot: 
+    2
+  </div>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:preflop 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="round"
+  >
+    Preflop
+  </div>
+  <div
+    className="board"
+  >
+    __ __ __ __ __
+  </div>
+  <div
+    className="pot"
+  >
+    Pot: 
+    2
+  </div>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:river 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="round"
+  >
+    River
+  </div>
+  <div
+    className="board"
+  >
+    As 5h 8d Jc 4s
+  </div>
+  <div
+    className="pot"
+  >
+    Pot: 
+    2
+  </div>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:turn 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="round"
+  >
+    Turn
+  </div>
+  <div
+    className="board"
+  >
+    As 5h 8d Jc __
+  </div>
+  <div
+    className="pot"
+  >
+    Pot: 
+    2
+  </div>
+</div>
+`;
+
 exports[`Cosmos fixtures: Player:active 1`] = `
 <div
   className="active"
