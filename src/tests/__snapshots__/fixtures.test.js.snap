@@ -2,7 +2,9 @@
 
 exports[`Cosmos fixtures: Player:active 1`] = `
 <div>
-  <p>
+  <p
+    className="name"
+  >
     Hero
   </p>
   <p>
@@ -21,7 +23,9 @@ exports[`Cosmos fixtures: Player:active 1`] = `
 
 exports[`Cosmos fixtures: Player:default 1`] = `
 <div>
-  <p>
+  <p
+    className="name"
+  >
     Player
   </p>
   <p>
@@ -37,7 +41,9 @@ exports[`Cosmos fixtures: Player:default 1`] = `
 
 exports[`Cosmos fixtures: Player:folded 1`] = `
 <div>
-  <p>
+  <p
+    className="name"
+  >
     Hero
   </p>
   <p>
@@ -56,7 +62,9 @@ exports[`Cosmos fixtures: Player:folded 1`] = `
 
 exports[`Cosmos fixtures: Player:inactive 1`] = `
 <div>
-  <p>
+  <p
+    className="name"
+  >
     Hero
   </p>
   <p>

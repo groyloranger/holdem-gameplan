@@ -1,7 +1,8 @@
 // @flow
 import React from 'react';
+import CSSModules from 'react-css-modules';
 
-// import styles from '../styles/Player.module.css';
+import styles from '../styles/Player.module.css';
 
 type Props = {
   active?: boolean,
@@ -20,10 +21,10 @@ Player.defaultProps = {
   stack: 100,
 };
 
-export default function Player(props: Props) {
+function Player(props: Props) {
   return (
     <div>
-      <p>{props.name}</p>
+      <p styleName="name" >{props.name}</p>
       <p>Stack: {props.stack}</p>
       <p>Bet: {props.bet}</p>
       {props.active &&
@@ -35,4 +36,6 @@ export default function Player(props: Props) {
     </div>
   );
 }
+
+export default CSSModules(Player, styles);
 
