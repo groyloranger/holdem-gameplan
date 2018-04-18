@@ -202,3 +202,11 @@ exports[`Cosmos fixtures: Player:inactive 1`] = `
   </ul>
 </div>
 `;
+
+exports[`Cosmos fixtures: Table:default 1`] = `
+<div
+  className="wrapper"
+>
+  Table
+</div>
+`;
