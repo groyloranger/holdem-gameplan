@@ -6,16 +6,19 @@ exports[`Cosmos fixtures: Action:default 1`] = `
 >
   <button
     className="fold"
+    onClick={[Function]}
   >
     Fold
   </button>
   <button
     className="call"
+    onClick={[Function]}
   >
     Call
   </button>
   <button
     className="raise"
+    onClick={[Function]}
   >
     Raise
   </button>

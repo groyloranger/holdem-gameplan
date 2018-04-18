@@ -4,6 +4,17 @@ export default [
   {
     component: Action,
     name: 'default',
+    props: {
+      fold: () => {
+        console.log('fold');
+      },
+      call: () => {
+        console.log('call');
+      },
+      raise: () => {
+        console.log('raise');
+      },
+    },
   },
 ];
 
