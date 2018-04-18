@@ -22,17 +22,20 @@ Player.defaultProps = {
 };
 
 function Player(props: Props) {
+  const state = () => {
+    let s = 'inactive';
+    if (props.active) { s = 'active'; }
+    if (props.folded) { s = 'folded'; }
+    return s;
+  };
+
   return (
-    <div>
-      <p styleName="name" >{props.name}</p>
-      <p>Stack: {props.stack}</p>
-      <p>Bet: {props.bet}</p>
-      {props.active &&
-        <p>ACTIVE</p>
-      }
-      {props.folded &&
-        <p>FOLDED</p>
-      }
+    <div styleName={state()}>
+      <strong styleName="name" >{props.name}</strong>
+      <ul>
+        <li>Stk: {props.stack}</li>
+        <li>Bet: {props.bet}</li>
+      </ul>
     </div>
   );
 }
