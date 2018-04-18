@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cosmos fixtures: Player:active 1`] = `
+<div
+  className="active"
+>
+  <center
+    className="name"
+  >
+    Hero
+  </center>
+  <ul>
+    <li>
+      Stk: 
+      199
+    </li>
+    <li>
+      Bet: 
+      1
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Cosmos fixtures: Player:default 1`] = `
+<div
+  className="inactive"
+>
+  <center
+    className="name"
+  >
+    Player
+  </center>
+  <ul>
+    <li>
+      Stk: 
+      100
+    </li>
+    <li>
+      Bet: 
+      0
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Cosmos fixtures: Player:folded 1`] = `
+<div
+  className="folded"
+>
+  <center
+    className="name"
+  >
+    Hero
+  </center>
+  <ul>
+    <li>
+      Stk: 
+      199
+    </li>
+    <li>
+      Bet: 
+      1
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Cosmos fixtures: Player:inactive 1`] = `
+<div
+  className="inactive"
+>
+  <center
+    className="name"
+  >
+    Hero
+  </center>
+  <ul>
+    <li>
+      Stk: 
+      199
+    </li>
+    <li>
+      Bet: 
+      1
+    </li>
+  </ul>
+</div>
+`;
