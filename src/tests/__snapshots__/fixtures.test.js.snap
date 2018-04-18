@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Cosmos fixtures: Player:active 1`] = `
+<div>
+  Player
+</div>
+`;
+
 exports[`Cosmos fixtures: Player:default 1`] = `
+<div>
+  Player
+</div>
+`;
+
+exports[`Cosmos fixtures: Player:folded 1`] = `
+<div>
+  Player
+</div>
+`;
+
+exports[`Cosmos fixtures: Player:inactive 1`] = `
 <div>
   Player
 </div>
