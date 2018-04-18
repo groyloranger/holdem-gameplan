@@ -31,7 +31,7 @@ function Player(props: Props) {
 
   return (
     <div styleName={state()}>
-      <strong styleName="name" >{props.name}</strong>
+      <center styleName="name" >{props.name}</center>
       <ul>
         <li>Stk: {props.stack}</li>
         <li>Bet: {props.bet}</li>

@@ -1,16 +1,32 @@
 .name{
-  text-align: center;
+  position: relative;
+  top: 5px;
+
   font-size: x-large;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.wrapper{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 140px;
+  height: 95px;
+  top: 100px;
 }
 
 .inactive{
+  composes: wrapper;
   background-color:lightblue;
 }
 
 .active{
+  composes: wrapper;
   background-color:sandybrown;
 }
 
 .folded{
+  composes: wrapper;
   background-color:gray;
 }
