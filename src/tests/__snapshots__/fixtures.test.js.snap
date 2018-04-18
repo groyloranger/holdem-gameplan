@@ -5,6 +5,11 @@ exports[`Cosmos fixtures: Community:default 1`] = `
   className="wrapper"
 >
   <center
+    className="round"
+  >
+    Preflop
+  </center>
+  <center
     className="board"
   >
     __ __ __ __ __
@@ -21,6 +26,11 @@ exports[`Cosmos fixtures: Community:flop 1`] = `
 <div
   className="wrapper"
 >
+  <center
+    className="round"
+  >
+    Flop
+  </center>
   <center
     className="board"
   >
@@ -39,6 +49,11 @@ exports[`Cosmos fixtures: Community:preflop 1`] = `
   className="wrapper"
 >
   <center
+    className="round"
+  >
+    Preflop
+  </center>
+  <center
     className="board"
   >
     __ __ __ __ __
@@ -56,6 +71,11 @@ exports[`Cosmos fixtures: Community:river 1`] = `
   className="wrapper"
 >
   <center
+    className="round"
+  >
+    River
+  </center>
+  <center
     className="board"
   >
     As 5h 8d Jc 4s
@@ -72,6 +92,11 @@ exports[`Cosmos fixtures: Community:turn 1`] = `
 <div
   className="wrapper"
 >
+  <center
+    className="round"
+  >
+    Turn
+  </center>
   <center
     className="board"
   >

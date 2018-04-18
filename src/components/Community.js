@@ -27,8 +27,32 @@ function Community(props: Props) {
     return str.trim();
   }
 
+  function round() {
+    const len = ((props.board) ? props.board.length : 0);
+    let rnd;
+    switch (len) {
+      case 0:
+        rnd = 'Preflop';
+        break;
+      case 3:
+        rnd = 'Flop';
+        break;
+      case 4:
+        rnd = 'Turn';
+        break;
+      case 5:
+        rnd = 'River';
+        break;
+      default:
+        rnd = 'Drawing';
+        break;
+    }
+    return rnd;
+  }
+
   return (
     <div styleName="wrapper">
+      <center styleName="round">{round()}</center>
       <center styleName="board">{boardString()}</center>
       <center styleName="pot">{props.pot}</center>
     </div>
