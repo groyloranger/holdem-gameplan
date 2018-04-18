@@ -4,7 +4,84 @@ exports[`Cosmos fixtures: Community:default 1`] = `
 <div
   className="wrapper"
 >
-  Community
+  <center
+    className="board"
+  >
+    __ __ __ __ __
+  </center>
+  <center
+    className="pot"
+  >
+    0
+  </center>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:flop 1`] = `
+<div
+  className="wrapper"
+>
+  <center
+    className="board"
+  >
+    As 5h 8d __ __
+  </center>
+  <center
+    className="pot"
+  >
+    2
+  </center>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:preflop 1`] = `
+<div
+  className="wrapper"
+>
+  <center
+    className="board"
+  >
+    __ __ __ __ __
+  </center>
+  <center
+    className="pot"
+  >
+    2
+  </center>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:river 1`] = `
+<div
+  className="wrapper"
+>
+  <center
+    className="board"
+  >
+    As 5h 8d Jc 4s
+  </center>
+  <center
+    className="pot"
+  >
+    2
+  </center>
+</div>
+`;
+
+exports[`Cosmos fixtures: Community:turn 1`] = `
+<div
+  className="wrapper"
+>
+  <center
+    className="board"
+  >
+    As 5h 8d Jc __
+  </center>
+  <center
+    className="pot"
+  >
+    2
+  </center>
 </div>
 `;
 
