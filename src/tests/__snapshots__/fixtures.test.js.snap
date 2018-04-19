@@ -245,12 +245,12 @@ exports[`Cosmos fixtures: Table:3-players 1`] = `
       <div
         className="round"
       >
-        Flop
+        Preflop
       </div>
       <div
         className="board"
       >
-        As 2s Kh __ __
+        __ __ __ __ __
       </div>
       <div
         className="pot"
@@ -301,7 +301,7 @@ exports[`Cosmos fixtures: Table:3-players 1`] = `
         </li>
         <li>
           Bet: 
-          0.5
+          0
         </li>
       </ul>
     </div>

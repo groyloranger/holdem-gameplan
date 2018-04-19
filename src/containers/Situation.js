@@ -3,17 +3,12 @@ import React, { Component } from 'react';
 
 import Table from '../components/Table';
 
-import type PlProps from '../components/Player';
-import type CmProps from '../components/Community';
+import type GameState from '../components/Table';
 
 type Props = {};
-type State = {
-  community: CmProps,
-  players: PlProps[],
-};
 
 // eslint-disable-next-line
-export default class Situation extends Component< Props, State > {
+export default class Situation extends Component< Props, GameState > {
   static defaultProps = {};
 
   constructor() {
@@ -23,29 +18,29 @@ export default class Situation extends Component< Props, State > {
         board: [],
         pot: 1.5,
       },
-      players: [
-        {
+      players: {
+        seat0: {
           active: true,
           bet: 0,
           folded: false,
           name: 'Button',
           stack: 100,
         },
-        {
+        seat1: {
           active: false,
           bet: 0,
           folded: false,
           name: 'Small',
           stack: 99.5,
         },
-        {
+        seat2: {
           active: false,
           bet: 1,
           folded: false,
           name: 'Big',
           stack: 99,
         },
-      ],
+      },
     };
   }
 
