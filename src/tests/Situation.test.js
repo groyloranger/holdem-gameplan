@@ -12,7 +12,35 @@ it('renders without crashing', () => {
 
 describe('Situation', () => {
   // Setup a clean wrapper before each test
-  let props;
+  let props = {
+    community: {
+      board: ['As', '2s', 'Kh'],
+      pot: 1.5,
+    },
+    players: [
+      {
+        active: true,
+        bet: 0,
+        folded: false,
+        name: 'Button',
+        stack: 100,
+      },
+      {
+        active: false,
+        bet: 0.5,
+        folded: false,
+        name: 'Small',
+        stack: 99.5,
+      },
+      {
+        active: false,
+        bet: 1,
+        folded: false,
+        name: 'Big',
+        stack: 99,
+      },
+    ],
+  };
   let wrap;
 
   const wrapper = () => {
@@ -23,7 +51,35 @@ describe('Situation', () => {
   };
 
   beforeEach(() => {
-    props = {};
+    props = {
+      community: {
+        board: ['As', '2s', 'Kh'],
+        pot: 1.5,
+      },
+      players: [
+        {
+          active: true,
+          bet: 0,
+          folded: false,
+          name: 'Button',
+          stack: 100,
+        },
+        {
+          active: false,
+          bet: 0.5,
+          folded: false,
+          name: 'Small',
+          stack: 99.5,
+        },
+        {
+          active: false,
+          bet: 1,
+          folded: false,
+          name: 'Big',
+          stack: 99,
+        },
+      ],
+    };
     wrap = undefined;
   });
 
@@ -32,6 +88,11 @@ describe('Situation', () => {
   it('is wrapped without problem', () => {
     // wrapper should render a single top-level element
     const { length } = wrapper();
+    expect(length).toEqual(1);
+  });
+
+  it('renders a table', () => {
+    const { length } = wrapper().find('Table');
     expect(length).toEqual(1);
   });
 });

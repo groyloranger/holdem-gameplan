@@ -24,12 +24,14 @@ function Table(props: Props) {
     </div>
   );
 
+  const [sb, bb, bu] = props.players;
+
   return (
     <div styleName="wrapper">
       {wrap(Community, 'community', props.community)}
-      {wrap(Player, 'pl0', props.players[0])}
-      {wrap(Player, 'pl1', props.players[1])}
-      {wrap(Player, 'pl2', props.players[2])}
+      {wrap(Player, 'pl0', sb)}
+      {wrap(Player, 'pl1', bb)}
+      {wrap(Player, 'pl2', bu)}
     </div>
   );
 }
