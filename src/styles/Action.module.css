@@ -1,0 +1,38 @@
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 50px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  
+  background-color: gray;
+}
+
+.button{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+}
+
+.fold{
+  composes: button;
+  left: 15%;
+}
+
+.call{
+  composes: button;
+  left: 35%;
+}
+
+.raise{
+  composes: button;
+  left: 55%;
+}
+
+.amount{
+  composes: button;
+  left: 75%;
+}

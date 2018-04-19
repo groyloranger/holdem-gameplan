@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Cosmos fixtures: Action:default 1`] = `
+<div
+  className="wrapper"
+>
+  <button
+    className="fold"
+    onClick={[Function]}
+  >
+    Fold
+  </button>
+  <button
+    className="call"
+    onClick={[Function]}
+  >
+    Call
+  </button>
+  <button
+    className="raise"
+    onClick={[Function]}
+  >
+    Raise
+  </button>
+  <input
+    className="amount"
+    onChange={[Function]}
+  />
+</div>
+`;
+
 exports[`Cosmos fixtures: Community:default 1`] = `
 <div
   className="wrapper"
