@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 import Table from '../components/Table';
+import { init3h } from '../static/GameState';
 
 import type GameState from '../components/Table';
 
@@ -13,37 +14,8 @@ export default class Situation extends Component< Props, GameState > {
 
   constructor() {
     super();
-    this.state = {
-      community: {
-        board: [],
-        pot: 1.5,
-      },
-      players: {
-        seat0: {
-          active: true,
-          bet: 0,
-          folded: false,
-          name: 'Button',
-          stack: 100,
-        },
-        seat1: {
-          active: false,
-          bet: 0,
-          folded: false,
-          name: 'Small',
-          stack: 99.5,
-        },
-        seat2: {
-          active: false,
-          bet: 1,
-          folded: false,
-          name: 'Big',
-          stack: 99,
-        },
-      },
-    };
+    this.state = init3h;
   }
-
 
   render() {
     return (

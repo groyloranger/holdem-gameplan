@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 
 import Situation from '../containers/Situation';
+import { init3h } from '../static/GameState';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -12,35 +13,7 @@ it('renders without crashing', () => {
 
 describe('Situation', () => {
   // Setup a clean wrapper before each test
-  let props = {
-    community: {
-      board: ['As', '2s', 'Kh'],
-      pot: 1.5,
-    },
-    players: [
-      {
-        active: true,
-        bet: 0,
-        folded: false,
-        name: 'Button',
-        stack: 100,
-      },
-      {
-        active: false,
-        bet: 0.5,
-        folded: false,
-        name: 'Small',
-        stack: 99.5,
-      },
-      {
-        active: false,
-        bet: 1,
-        folded: false,
-        name: 'Big',
-        stack: 99,
-      },
-    ],
-  };
+  let props;
   let wrap;
 
   const wrapper = () => {
@@ -51,35 +24,7 @@ describe('Situation', () => {
   };
 
   beforeEach(() => {
-    props = {
-      community: {
-        board: [],
-        pot: 1.5,
-      },
-      players: {
-        seat0: {
-          active: true,
-          bet: 0,
-          folded: false,
-          name: 'Button',
-          stack: 100,
-        },
-        seat1: {
-          active: false,
-          bet: 0,
-          folded: false,
-          name: 'Small',
-          stack: 99.5,
-        },
-        seat2: {
-          active: false,
-          bet: 1,
-          folded: false,
-          name: 'Big',
-          stack: 99,
-        },
-      },
-    };
+    props = init3h;
     wrap = undefined;
   });
 
