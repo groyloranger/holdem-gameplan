@@ -14,6 +14,9 @@ export default [
       raise: () => {
         console.log('raise');
       },
+      handleAmount: () => {
+        console.log('amount changed');
+      },
     },
   },
 ];

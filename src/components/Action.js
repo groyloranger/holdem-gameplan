@@ -7,12 +7,12 @@ import styles from '../styles/Action.module.css';
 export type AcProps = {
   fold: () => void,
   call: () => void,
-  raise: () => void
+  raise: () => void,
+  handleAmount: () => void,
 };
 
 // eslint-disable-next-line no-use-before-define
 Action.defaultProps = {};
-
 
 function Action(props: AcProps) {
   return (
@@ -20,6 +20,7 @@ function Action(props: AcProps) {
       <button styleName="fold" onClick={props.fold}>Fold</button>
       <button styleName="call" onClick={props.call}>Call</button>
       <button styleName="raise" onClick={props.raise}>Raise</button>
+      <input styleName="amount" onChange={props.handleAmount} />
     </div>
   );
 }

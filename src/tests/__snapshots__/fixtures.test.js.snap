@@ -22,6 +22,10 @@ exports[`Cosmos fixtures: Action:default 1`] = `
   >
     Raise
   </button>
+  <input
+    className="amount"
+    onChange={[Function]}
+  />
 </div>
 `;
 
