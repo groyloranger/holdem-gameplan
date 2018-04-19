@@ -3,9 +3,11 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 
 import styles from '../styles/Table.module.css';
+import Action from './Action';
 import Player from './Player';
 import Community from './Community';
 
+import type AcProps from './Action';
 import type PlProps from './Player';
 import type CmProps from './Community';
 
@@ -25,10 +27,26 @@ type PlayerList = {
 export type GameState = {
   players: PlayerList,
   community: CmProps,
+  action?: AcProps,
 };
 
 // eslint-disable-next-line no-use-before-define
-Table.defaultProps = {};
+Table.defaultProps = {
+  action: {
+    fold: () => {
+      console.log('fold');
+    },
+    call: () => {
+      console.log('call');
+    },
+    raise: () => {
+      console.log('raise');
+    },
+    handleAmount: () => {
+      console.log('amount changed');
+    },
+  },
+};
 
 function Table(props: GameState) {
   const wrap = (Component, style, prps) => (
@@ -45,6 +63,7 @@ function Table(props: GameState) {
       {wrap(Player, 'pl0', sb)}
       {wrap(Player, 'pl1', bb)}
       {wrap(Player, 'pl2', bu)}
+      {wrap(Action, 'action', props.action)}
     </div>
   );
 }

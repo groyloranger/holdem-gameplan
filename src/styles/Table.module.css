@@ -10,31 +10,39 @@
   background-color: white;
 }
 
-.community{
+.centered{
   position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.community{
+  composes: centered;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .pl0{
-  position: absolute;
-  left: 20%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  composes: centered;
+  left: 15%;
+  top: 70%;
 }
 
 .pl1{
-  position: absolute;
+  composes: centered;
   left: 50%;
   top: 20%;
-  transform: translate(-50%, -50%);
 }
 
 .pl2{
-  position: absolute;
-  left: 80%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  composes: centered;
+  left: 85%;
+  top: 70%;
+}
+
+.action{
+  composes: centered;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
 }
 

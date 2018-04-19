@@ -301,7 +301,7 @@ exports[`Cosmos fixtures: Table:3-players 1`] = `
         </li>
         <li>
           Bet: 
-          0
+          0.5
         </li>
       </ul>
     </div>
@@ -327,6 +327,36 @@ exports[`Cosmos fixtures: Table:3-players 1`] = `
           1
         </li>
       </ul>
+    </div>
+  </div>
+  <div
+    className="action"
+  >
+    <div
+      className="wrapper"
+    >
+      <button
+        className="fold"
+        onClick={[Function]}
+      >
+        Fold
+      </button>
+      <button
+        className="call"
+        onClick={[Function]}
+      >
+        Call
+      </button>
+      <button
+        className="raise"
+        onClick={[Function]}
+      >
+        Raise
+      </button>
+      <input
+        className="amount"
+        onChange={[Function]}
+      />
     </div>
   </div>
 </div>
