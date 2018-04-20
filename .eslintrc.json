@@ -17,6 +17,7 @@
         "import/no-named-as-default-member": "off",
         "import/no-extraneous-dependencies": "off",
         "react/default-props-match-prop-types": "off",
-        "prefer-const": "warn"
+        "prefer-const": "warn",
+        "import/prefer-default-export": "warn"
     }
 }
